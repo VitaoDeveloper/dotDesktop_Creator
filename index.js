@@ -10,9 +10,12 @@ Categories=${env.categories}
 Type=Application
 Terminal=false`;
 
+const success = `
+Success! You should move the file to ~/.local/share/applications (Your user), or /usr/share/applications (All users, sudo required). 
+Run sudo update-desktop-database to display your app in your Desktop Apps
+`
+
 fs.writeFile(`${camelCase(env.name)}.desktop`, content, (e) => {
     if (e) throw e;
-    console.log(`Success! You should move the file to ~/.local/share/applications (Your user), or /usr/share/applications (All users, sudo required).\n 
-                 Run sudo update-desktop-database to display your app in your Desktop Apps`);
-    
+    console.log(success);
 });
