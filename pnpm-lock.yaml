@@ -11,6 +11,9 @@ importers:
       dotenv:
         specifier: ^17.4.2
         version: 17.4.2
+      fs:
+        specifier: 0.0.1-security
+        version: 0.0.1-security
       readline-sync:
         specifier: ^1.4.10
         version: 1.4.10
@@ -21,6 +24,9 @@ packages:
     resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
     engines: {node: '>=12'}
 
+  fs@0.0.1-security:
+    resolution: {integrity: sha512-3XY9e1pP0CVEUCdj5BmfIZxRBTSDycnbqhIOGec9QYtmVH2fbLpj86CFWkrNOkt/Fvty4KZG5lTglL9j/gJ87w==}
+
   readline-sync@1.4.10:
     resolution: {integrity: sha512-gNva8/6UAe8QYepIQH/jQ2qn91Qj0B9sYjMBBs3QOB8F2CXcKgLxQaJRP76sWVRQt+QU+8fAkCbCvjjMFu7Ycw==}
     engines: {node: '>= 0.8.0'}
@@ -28,5 +34,7 @@ packages:
 snapshots:
 
   dotenv@17.4.2: {}
+
+  fs@0.0.1-security: {}
 
   readline-sync@1.4.10: {}
