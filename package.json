@@ -16,8 +16,8 @@
     "fs": "0.0.1-security",
     "readline-sync": "^1.4.10"
   },
-  "bin": "app.js",
+  "bin": "index.js",
   "pkg": {
-    "targets": [ "node18-win-x64", "node18-linux-x64", "node18-macos-x64" ]
+    "targets": ["node18-linux-x64"]
   }
 }

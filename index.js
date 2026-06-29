@@ -16,15 +16,15 @@ Type=Application
 Terminal=false`;
 
 const success = `
-Success! You should move the file to ~/.local/share/applications (Your user), or /usr/share/applications (All users, sudo required). 
+Success! You should check ./generated directory and move the file to ~/.local/share/applications (Your user), or /usr/share/applications (All users, sudo required). 
 Run sudo update-desktop-database to display your app in your Desktop Apps
 `
-fs.mkdir('files', { recursive: true }, (e) => {
+fs.mkdir('generated', { recursive: true }, (e) => {
     if (e) throw e;
     console.log('...');
 });
 
-fs.writeFile(`files/${camelCase(env.name)}.desktop`, content, (e) => {
+fs.writeFile(`generated/${camelCase(env.name)}.desktop`, content, (e) => {
     if (e) throw e;
     console.log(success);
 });
