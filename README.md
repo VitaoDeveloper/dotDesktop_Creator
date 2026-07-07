@@ -1,4 +1,4 @@
-# DotDesktop Creator
+# dotDesktop Creator
 
 Generate `.desktop` files for Linux from a `.env` file.
 
